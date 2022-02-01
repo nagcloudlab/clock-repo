@@ -8,7 +8,7 @@ function Clock({ timeZone }) {
         }, 1000);
     }, [])
     return (
-        <div style={{ color: 'red' }}>
+        <div style={{ color: 'green' }}>
             {time}
         </div>
     );
