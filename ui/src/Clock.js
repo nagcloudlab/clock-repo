@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
 function Clock({ timeZone }) {
-    const [time, setTime] = useState(new Date().toLocaleTimeString('en-US', { timeZone }))
-    useEffect(() => {
-        setInterval(() => {
-            setTime(new Date().toLocaleTimeString('en-US', { timeZone }))
-        }, 1000);
-    }, [])
+    // const [time, setTime] = useState(new Date().toLocaleTimeString('en-US', { timeZone }))
+    // useEffect(() => {
+    //     setInterval(() => {
+    //         setTime(new Date().toLocaleTimeString('en-US', { timeZone }))
+    //     }, 1000);
+    // }, [])
     return (
         <div style={{ color: 'green' }}>
-            {time}
+            {new Date().toLocaleTimeString('en-US', { timeZone })}
         </div>
     );
 }
