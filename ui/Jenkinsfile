@@ -1,0 +1,28 @@
+
+pipeline {
+    agent any
+    stages {
+        stage('install dependencies') { 
+           dir("ui"){
+            steps {
+                sh 'npm install' 
+            }
+           }
+        }
+        stage('Test') { 
+           dir("ui"){
+            steps {
+                echo "test"
+            }
+           }
+        }
+         stage('Build') { 
+           dir("ui"){
+            steps {
+                sh 'npm run build' 
+            }
+           }
+        }
+    }
+}
+
