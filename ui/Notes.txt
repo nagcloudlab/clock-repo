@@ -1,0 +1,73 @@
+
+
+
+ - code
+
+Dev Engineer 
+  
+    - unit-testing
+    - integration testing
+    - build
+    - push the built-code common repo, where ops-engineer can pick it
+
+-----------------------------------------------------------------------------
+
+Ops Engineer
+
+    - prepare system
+    - stop existing syste, to apply changes
+    - re-start server
+    - bla bla bla
+    
+
+-----------------------------------------------------------------------------    
+
+Automation = Dev-Ops
+
+How,
+
+    -> by using tools/scripts
+
+        scm          : Git & Bitbucket
+        unit-testing : jest
+        e2e          : protractor / selenium
+        build        : webpack
+        packaging    : docker 
+        ......
+
+
+    build pipeline ( CI & CD ) , should move code/changes as soon as possible production envi
+
+-----------------------------------------------------------------------------    
+what is cloud ?
+
+    any IT-service which is available over web.
+
+
+        => Infrastruture as a server ( IAAS )
+
+            - computing machines
+
+        => Plaform as a service ( PAAS )
+
+            - ready runtime to deploy our applications
+
+        => Software as a Service ( SAAS )
+
+        => Storage as a service
+
+            dropbox,drive
+
+-----------------------------------------------------------------------            
+
+Popular Cloud Service Providers
+
+    => Amazon => AWS
+    => Microsoft => Azure
+    => Google => GCP
+    => IBM cloud
+    => Digital Ocean
+
+----------------------------------------------------------------------------    
+
+
