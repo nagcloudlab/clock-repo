@@ -23,7 +23,7 @@ pipeline {
             } 
         }
         // continious deployment
-        stage('Build') { 
+        stage('Deployment') { 
             steps {
                 dir("ui"){
                     sh 'scp -i /home/ubuntu/aws-fedora.pem build/* ubuntu@13.234.116.70:/var/www/html' 
